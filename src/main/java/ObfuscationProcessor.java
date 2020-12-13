@@ -17,7 +17,6 @@ public class ObfuscationProcessor {
     private static String source = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 `~!@#$%^*()_-+={[}]:;\"',.?\\|<>/";
     private static String target = "ePQa- $\\?q:*x8mF0{7RrwZDK|zkoVy}[\"gjchpbEnBUNA<GI`~LTuvs/l,(3M5_H2+OY>ft.#;!S@'1C]%9iWd4X^J=)6";
 
-
     public void proceed(File inputFile, File outputFile, Mode mode) throws IOException, TransformerException, ParserConfigurationException, SAXException {
         XMLReader xmlReader = new XMLFilterImpl(SAXParserFactory.newInstance().newSAXParser().getXMLReader()) {
             @Override

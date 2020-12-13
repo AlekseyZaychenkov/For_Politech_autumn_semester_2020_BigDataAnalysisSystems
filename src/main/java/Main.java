@@ -6,13 +6,12 @@ import java.io.File;
 import java.io.IOException;
 
 public class Main {
-    private final static int REQUIRED_NUMBER_OF_ARGUMENTS = 3;
     private static Mode mode;
     private static ObfuscationProcessor obfuscationProcessor = new ObfuscationProcessor();
 
     /*Arguments order: mode (OB/DEOB), input file path, output file path */
     public static void main(String[] args) {
-        if (args.length != REQUIRED_NUMBER_OF_ARGUMENTS) {
+        if (args.length != 3) {
             System.out.println("Wrong number of arguments, " +
                     "there should be arguments: mode (OB/DEOB), " +
                     "input file path, output file path.");
